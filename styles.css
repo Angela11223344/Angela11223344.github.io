@@ -50,33 +50,33 @@ nav a {
 }
 
 #circle-1 {
-    top: 500px;
+    top: 600px;
     left: 300px;
 }
 
 #circle-2 {
-    top: 500px;
+    top: 600px;
     left: 845px;
 }
 
 #circle-3 {
-    top: 250px;
+    top: 350px;
     left: 750px;
 
 }
 
 #circle-4 {
-    top: 250px;
+    top: 350px;
     left: 400px;
 }
 
 #circle-5 {
-    top: 750px;
+    top: 850px;
     left: 750px;
 }
 
 #circle-6 {
-    top: 750px;
+    top: 850px;
     left: 400px;
 }
 
@@ -95,7 +95,7 @@ img {
     width: 300px;
     padding: 2px;
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 520px
 }
 
@@ -119,37 +119,72 @@ footer {
     }
 
     .circle {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         font-size: 10px;
     }
 
     .circle-link {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 76px;
         font-size: 5px;
+
     }
 
     img {
         height: 150px;
-        width: 100px;
-        top: 100px;
-        left: 0px;
+        width: 110px;
+        top: 300px;
+        left: 130px;
+    }
+
+    #circle-1 {
+        top: 330px;
+        left: 20px;
+    }
+
+    #circle-2 {
+        top: 330px;
+        left: 250px;
+    }
+
+    #circle-3 {
+        top: 200px;
+        left: 200px;
+    }
+
+    #circle-4 {
+        top: 200px;
+        left: 80px;
+    }
+
+    #circle-5 {
+        top: 450px;
+        left: 80px;
+    }
+
+    #circle-6 {
+        top: 450px;
+        left: 200px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    #page-links {
+        display:flex;
+        justify-content: space-around;
     }
 }    
 
-@media (min-width: 900px)  {
+@media (min-width: 700px)  {
 
-.background {
-    background-color: yellow;
-}
-
-nav {
-
-}
-
-    #header-text {
+    #page-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
     
-}
-
 }

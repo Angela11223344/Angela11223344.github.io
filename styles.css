@@ -2,9 +2,9 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-header {
+/*header {
     background-color: yellow;
-}
+}*/
 
 nav {
     position: fixed;
@@ -21,10 +21,10 @@ nav a {
     text-align: center;
 }
 
-.background {
+.intro {
     /*background-image: linear-gradient( #b4ffe5, blue);*/
     background-color: yellow;
-    height: 70vh;
+    height: 150vh;
     padding: 50px;
 }
 
@@ -80,14 +80,6 @@ nav a {
     left: 400px;
 }
 
-
-#page-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-items: flex-end;
-}
-
 img {
     border-radius: 50%;
     height: 380px;
@@ -99,10 +91,63 @@ img {
     left: 520px
 }
 
-/*.form {
+.page-links {
+
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
     background-color: yellow;
-}*/
+    height: 40vh;
+    padding: 50px;
+}
+
+form {
+    width: auto;
+    background-color: yellow;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.form-item label {
+    flex-basis: 150px;
+    font-size: 22px;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+    border: 2px solid #FDDC5C;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid black;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+    border: 2px solid #FDDC5C;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-item button:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: #FFF;
+}
+
+.form-item button {
+    width: 100px;
+}
 
 footer {
     text-align: center;
@@ -178,7 +223,7 @@ footer {
     }
 }    
 
-@media (min-width: 700px)  {
+@media (max-width: 800px)  {
 
     #page-links {
         display: flex;
@@ -186,5 +231,3 @@ footer {
         justify-content: space-around;
         align-items: flex-end;
     }
-    
-}

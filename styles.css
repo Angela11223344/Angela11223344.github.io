@@ -50,25 +50,42 @@ nav a {
 }
 
 #circle-1 {
-    top: 300px;
+    top: 500px;
     left: 300px;
 }
 
 #circle-2 {
-    top: 300px;
-    left: 500px;
+    top: 500px;
+    left: 845px;
 }
 
 #circle-3 {
-    top: 600px;
-    left: 600:
+    top: 250px;
+    left: 750px;
 
 }
+
+#circle-4 {
+    top: 250px;
+    left: 400px;
+}
+
+#circle-5 {
+    top: 750px;
+    left: 750px;
+}
+
+#circle-6 {
+    top: 750px;
+    left: 400px;
+}
+
 
 #page-links {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-items: flex-end;
 }
 
 img {
@@ -78,8 +95,8 @@ img {
     width: 300px;
     padding: 2px;
     position: absolute;
-    top: 300px;
-    left: 540px
+    top: 400px;
+    left: 520px
 }
 
 /*.form {
@@ -92,16 +109,47 @@ footer {
 }
 
 @media (max-width: 600px) {
+    
+    nav {
+        font-size: 10px;
+    }
+
     #header-text {
         font-size: 10px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+    }
+
+    .circle-link {
+        width: 100px;
+        height: 100px;
+        font-size: 5px;
+    }
+
+    img {
+        height: 150px;
+        width: 100px;
+        top: 100px;
+        left: 0px;
     }
 }    
 
 @media (min-width: 900px)  {
 
 .background {
-
     background-color: yellow;
+}
+
+nav {
 
 }
+
+    #header-text {
+    
+}
+
 }

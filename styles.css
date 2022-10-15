@@ -2,10 +2,6 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-header {
-    background-color: yellow;
-}
-
 nav {
     position: fixed;
 }
@@ -21,10 +17,10 @@ nav a {
     text-align: center;
 }
 
-.background {
+.intro {
     /*background-image: linear-gradient( #b4ffe5, blue);*/
     background-color: yellow;
-    height: 70vh;
+    height: 120vh;
     padding: 50px;
 }
 
@@ -36,12 +32,48 @@ nav a {
     color: white;
     text-align: center;
     display: inline-block;
+    position: absolute;
 }
 
-#page-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.circle-link {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+#circle-1 {
+    top: 600px;
+    left: 260px;
+}
+
+#circle-2 {
+    top: 600px;
+    left: 805px;
+}
+
+#circle-3 {
+    top: 350px;
+    left: 710px;
+
+}
+
+#circle-4 {
+    top: 350px;
+    left: 360px;
+}
+
+#circle-5 {
+    top: 850px;
+    left: 710px;
+}
+
+#circle-6 {
+    top: 850px;
+    left: 360px;
 }
 
 img {
@@ -50,28 +82,165 @@ img {
     display: inline-block;
     width: 300px;
     padding: 2px;
+    position: absolute;
+    top: 500px;
+    left: 480px
 }
 
-/*.form {
-    align-items: center;
+.page-links {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     background-color: yellow;
-}*/
+    height: 40vh;
+    padding: 50px;
+}
+
+#form-background {
+    background-color: yellow;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    width: auto;
+    background-color: yellow;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.form-item label {
+    flex-basis: 150px;
+    font-size: 22px;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+    border: 2px solid #FDDC5C;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid black;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+    border: 2px solid #FDDC5C;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-item button:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: #FFF;
+}
+
+.form-item button {
+    width: 100px;
+}
 
 footer {
     text-align: center;
 }
 
 @media (max-width: 600px) {
+    
+    nav {
+        font-size: 8px;
+    }
+
     #header-text {
+        font-size: 15px;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
         font-size: 10px;
     }
+
+    .circle-link {
+        width: 200px;
+        height: 76px;
+        font-size: 5px;
+
+    }
+
+    .intro {
+        /*background-image: linear-gradient( #b4ffe5, blue);*/
+        background-color: yellow;
+        height: 100vh;
+        padding: 50px;
+    }
+
+    img {
+        height: 150px;
+        width: 110px;
+        top: 300px;
+        left: 135px;
+    }
+
+    #circle-1 {
+        top: 330px;
+        left: 35px;
+    }
+
+    #circle-2 {
+        top: 330px;
+        left: 265px;
+    }
+
+    #circle-3 {
+        top: 200px;
+        left: 215px;
+    }
+
+    #circle-4 {
+        top: 200px;
+        left: 95px;
+    }
+
+    #circle-5 {
+        top: 450px;
+        left: 95px;
+    }
+
+    #circle-6 {
+        top: 450px;
+        left: 215px;
+    }
+
+    #page-links {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
 }    
 
-@media (min-width: 900px)  {
+@media (max-width: 900px)  {
 
-.background {
+    #page-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
 
-    background-color: yellow;
 
-}
-}
+    

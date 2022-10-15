@@ -11,46 +11,82 @@
     <body>
         <header>
             <nav>
-                <a href=""> ABOUT </a> |
-                <a href=""> PROJECTS </a> |
-                <a href=""> CONTACT </a> |
+                <a href="index.html">HOME</a> |
+                <a href="about.html"> ABOUT </a> |
+                <a href="projects.html"> PROJECTS </a> |
             </nav>
         </header>
     <main>
-        <section class="background">
+        <section class="intro">
             <div id="header-text">
                 <h1> Hi, I'm Angela...</h1>
             </div>
-
-            <div class="circle" id="abouts"> 
+            <img src="Images/angela.JPG" alt="Angela" class="center">
+            <div class="circle" id="circle-1"> 
                 <p>I like to</p>
                 <p>make things</p> 
                 <p>look pretty.</p>
             </div>
-                <img src="Images/angela.JPG" alt="Angela" class="center" id="abouts">
-            <div class="circle" id="abouts">
+               
+            <div class="circle" id="circle-2">
                 <p>I enjoy</p>
                 <p>learning</p>
                 <p>new things.</p>
             </div>
-            <div class="circle" id="abouts">
+            <div class="circle" id="circle-3">
                 <p>There isn't</p>
                 <p>a craft</p>
                 <p>I don't like.</p>
             </div>
+            <div class="circle" id="circle-4">
+                <p>Hello</p>
+                <p>hello</p>
+                <p>hello</p>
+            </div>
+            <div class="circle" id="circle-5">
+                <p>I know</p>
+                <p>a</p>
+                <p>little HTML.</p>
+            </div>
+            <div class="circle" id="circle-6">
+                <p>I know</p>
+                <p>a little</p>
+                <p>CSS</p>
+            </div>
         </section>
 
-        <section class="background" id="page-links">
-            <div class="circle">
+        <section id="form-background">
+            <h2> Get in touch... </h2>
+                <form action="" method="">
+                    <div class="form-item">        
+                        <label for="name">Name</label>        
+                        <input type="text" id="name" name="name">    
+                        </div>    
+                    <div class="form-item">        
+                        <label for="mail">Email</label>        
+                        <input type="email" id="mail" name="email">    
+                    </div>    
+                    <div class="form-item">        
+                        <label for="message">Message</label>        
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <button type= submit">Send!</button>
+                    </div>
+                </form>
+        </section>
+
+        <section class="page-links">
+            <div class="circle-link">
         <h2> About </h2>       
             </div>
 
-            <div class="circle">    
+            <div class="circle-link">    
         <h2> Projects </h2>        
             </div>
 
-            <div class="circle">
-        <h2> Contact </h2>        
+            <div class="circle-link">
+        <h2> Fun Stuff </h2>        
             </div>
         </section>
 

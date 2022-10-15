@@ -2,10 +2,6 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/*header {
-    background-color: yellow;
-}*/
-
 nav {
     position: fixed;
 }
@@ -24,7 +20,7 @@ nav a {
 .intro {
     /*background-image: linear-gradient( #b4ffe5, blue);*/
     background-color: yellow;
-    height: 150vh;
+    height: 120vh;
     padding: 50px;
 }
 
@@ -51,33 +47,33 @@ nav a {
 
 #circle-1 {
     top: 600px;
-    left: 300px;
+    left: 260px;
 }
 
 #circle-2 {
     top: 600px;
-    left: 845px;
+    left: 805px;
 }
 
 #circle-3 {
     top: 350px;
-    left: 750px;
+    left: 710px;
 
 }
 
 #circle-4 {
     top: 350px;
-    left: 400px;
+    left: 360px;
 }
 
 #circle-5 {
     top: 850px;
-    left: 750px;
+    left: 710px;
 }
 
 #circle-6 {
     top: 850px;
-    left: 400px;
+    left: 360px;
 }
 
 img {
@@ -88,18 +84,24 @@ img {
     padding: 2px;
     position: absolute;
     top: 500px;
-    left: 520px
+    left: 480px
 }
 
 .page-links {
 
     display: flex;
-    align-items: center;
     justify-content: space-around;
     align-items: flex-end;
     background-color: yellow;
     height: 40vh;
     padding: 50px;
+}
+
+#form-background {
+    background-color: yellow;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 
 form {
@@ -156,11 +158,11 @@ footer {
 @media (max-width: 600px) {
     
     nav {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     #header-text {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .circle {
@@ -176,54 +178,62 @@ footer {
 
     }
 
+    .intro {
+        /*background-image: linear-gradient( #b4ffe5, blue);*/
+        background-color: yellow;
+        height: 100vh;
+        padding: 50px;
+    }
+
     img {
         height: 150px;
         width: 110px;
         top: 300px;
-        left: 130px;
+        left: 135px;
     }
 
     #circle-1 {
         top: 330px;
-        left: 20px;
+        left: 35px;
     }
 
     #circle-2 {
         top: 330px;
-        left: 250px;
+        left: 265px;
     }
 
     #circle-3 {
         top: 200px;
-        left: 200px;
+        left: 215px;
     }
 
     #circle-4 {
         top: 200px;
-        left: 80px;
+        left: 95px;
     }
 
     #circle-5 {
         top: 450px;
-        left: 80px;
+        left: 95px;
     }
 
     #circle-6 {
         top: 450px;
-        left: 200px;
-    }
-
-    footer {
-        font-size: 10px;
+        left: 215px;
     }
 
     #page-links {
         display:flex;
         justify-content: space-around;
     }
+
+    footer {
+        font-size: 10px;
+    }
+
 }    
 
-@media (max-width: 800px)  {
+@media (max-width: 900px)  {
 
     #page-links {
         display: flex;
@@ -231,3 +241,6 @@ footer {
         justify-content: space-around;
         align-items: flex-end;
     }
+
+
+    

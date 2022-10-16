@@ -15,6 +15,7 @@ nav a {
     color: black;
     font-size: 30px;
     text-align: center;
+    padding: 20px;
 }
 
 .intro {
@@ -22,6 +23,7 @@ nav a {
     background-color: yellow;
     height: 120vh;
     padding: 50px;
+    display: flex;
 }
 
 .circle {
@@ -32,7 +34,6 @@ nav a {
     color: white;
     text-align: center;
     display: inline-block;
-    position: absolute;
 }
 
 .circle-link {
@@ -45,50 +46,43 @@ nav a {
     display: inline-block;
 }
 
-#circle-1 {
-    top: 600px;
-    left: 260px;
-}
-
-#circle-2 {
-    top: 600px;
-    left: 805px;
-}
-
-#circle-3 {
-    top: 350px;
-    left: 710px;
-
-}
-
-#circle-4 {
-    top: 350px;
-    left: 360px;
-}
-
-#circle-5 {
-    top: 850px;
-    left: 710px;
-}
-
-#circle-6 {
-    top: 850px;
-    left: 360px;
-}
-
 img {
     border-radius: 50%;
     height: 380px;
-    display: inline-block;
     width: 300px;
+    left: -30px;
     padding: 2px;
-    position: absolute;
-    top: 500px;
-    left: 480px
+    margin-top: -40px;
+    margin-left: -30px;
+    margin-right: -20px;
+    margin-bottom: -10px;
+    z-index: 6;
+    position: relative;
+}
+
+.middle {
+    z-index: 6;
+    justify-content: space-between;
+    margin: 200px auto 50px auto;
+}
+
+.outer {
+    justify-content: space-around;
+    margin: 20px auto 20px auto; 
+}
+
+#top {
+    justify-content: space-around;
+    margin: 350px auto 400px auto;
+}
+
+#bottom {
+    justify-content: space-around;
+    margin: 350px auto 400px auto;
+   
 }
 
 .page-links {
-
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -155,6 +149,26 @@ footer {
     text-align: center;
 }
 
+/* Projects Page CSS*/
+
+ .background {
+    background-color: yellow;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+/* About-page*/
+
+#about-text {
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+}
+
 @media (max-width: 600px) {
     
     nav {
@@ -169,13 +183,14 @@ footer {
         width: 90px;
         height: 90px;
         font-size: 10px;
+        text-align: center;
     }
 
     .circle-link {
         width: 200px;
         height: 76px;
         font-size: 5px;
-
+        text-align: center;
     }
 
     .intro {
@@ -188,52 +203,44 @@ footer {
     img {
         height: 150px;
         width: 110px;
-        top: 300px;
-        left: 135px;
-    }
-
-    #circle-1 {
-        top: 330px;
-        left: 35px;
-    }
-
-    #circle-2 {
-        top: 330px;
-        left: 265px;
-    }
-
-    #circle-3 {
         top: 200px;
-        left: 215px;
+        left: 190px;
+        margin-top: -200px;
+        margin-left: -180px;
+        margin-right: 50px;
+        margin-bottom: 190px;
+        z-index: 6;
+        position: relative;
     }
 
-    #circle-4 {
-        top: 200px;
-        left: 95px;
+    .middle {
+        margin-top: 110px;
+        margin-left: -760px;
     }
 
-    #circle-5 {
-        top: 450px;
-        left: 95px;
+    #top {
+        margin-top: 200px;
+        margin-right: 470px;
     }
 
-    #circle-6 {
-        top: 450px;
-        left: 215px;
-    }
+    #bottom {
+        margin-top: 200px;
+        margin-left: -150px;
+   
+}
 
-    #page-links {
-        display:flex;
-        justify-content: space-around;
-    }
+#page-links {
+    display:flex;
+    justify-content: space-around;
+}
 
-    footer {
-        font-size: 10px;
-    }
+footer {
+    font-size: 10px;
+}
 
 }    
 
-@media (max-width: 900px)  {
+@media (min-width: 900px)  {
 
     #page-links {
         display: flex;
@@ -241,6 +248,3 @@ footer {
         justify-content: space-around;
         align-items: flex-end;
     }
-
-
-    

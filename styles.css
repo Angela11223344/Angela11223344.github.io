@@ -18,12 +18,44 @@ nav a {
     padding: 20px;
 }
 
-.intro {
+.intro-text {
     /*background-image: linear-gradient( #b4ffe5, blue);*/
     background-color: yellow;
-    height: 120vh;
-    padding: 50px;
+    height: 12vh;
+    padding: 10px;
     display: flex;
+    font-size: 25px;
+}
+
+.container{
+    display: inline-block;
+    font-family: "Courier New";
+    font-size: 24px;
+}
+  
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 2.5s steps(30, end) forwards, blinking 1s infinite;
+}
+    
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinking {
+    0% {border-color: transparent}
+    50% {border-color: black}
+    100% {border-color: transparent}
+}
+  
+
+section {
+    background-color: yellow;
+    padding: 40px;
 }
 
 .circle {
@@ -33,7 +65,50 @@ nav a {
     background-color: black;
     color: white;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row-2 .circle-col {
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    align-items:center;
+}
+
+.center-img {
+    width:50%;
+    display:flex;
+    justify-content:center;
+    z-index:5;
+}
+
+.center-img img{
+    height:450px;
+    width:350px;
+    border-radius:60%;
+}
+
+.grow:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .circle-link {
@@ -43,43 +118,16 @@ nav a {
     background-color: black;
     color: white;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
 }
 
-img {
-    border-radius: 50%;
-    height: 380px;
-    width: 300px;
-    left: -30px;
-    padding: 2px;
-    margin-top: -40px;
-    margin-left: -30px;
-    margin-right: -20px;
-    margin-bottom: -10px;
-    z-index: 6;
-    position: relative;
-}
-
-.middle {
-    z-index: 6;
-    justify-content: space-between;
-    margin: 200px auto 50px auto;
-}
-
-.outer {
-    justify-content: space-around;
-    margin: 20px auto 20px auto; 
-}
-
-#top {
-    justify-content: space-around;
-    margin: 350px auto 400px auto;
-}
-
-#bottom {
-    justify-content: space-around;
-    margin: 350px auto 400px auto;
-   
+.circle-link a {
+    color: white;
+    font-size: 25px;
 }
 
 .page-links {
@@ -89,13 +137,39 @@ img {
     background-color: yellow;
     height: 40vh;
     padding: 50px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-linkedin {
+    color: black;
 }
 
 #form-background {
-    background-color: yellow;
+    background-color: black;
     padding: 10px;
     font-size: 20px;
     text-align: center;
+    color: yellow;
+    max-width: auto;
+    background-position: center;
 }
 
 form {
@@ -108,6 +182,7 @@ form {
     justify-content: center;
     align-items: flex-end;
     padding: 10px;
+    color: black;
 }
 
 .form-item label {
@@ -149,6 +224,13 @@ footer {
     text-align: center;
 }
 
+.center-icons {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 /* Projects Page CSS*/
 
  .background {
@@ -158,7 +240,7 @@ footer {
 #projects {
     display: flex;
     justify-content: center;
-    align-content: space-around;
+    align-content: space-between;
 }
 
 /* About-page*/
@@ -167,12 +249,13 @@ footer {
     text-align: center;
     font-size: 30px;
     padding: 50px;
+    max-width: 1200px;
 }
 
 @media (max-width: 600px) {
     
     nav {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     #header-text {
@@ -193,50 +276,41 @@ footer {
         text-align: center;
     }
 
-    .intro {
+    .intro-text {
         /*background-image: linear-gradient( #b4ffe5, blue);*/
         background-color: yellow;
-        height: 100vh;
+        height: 20vh;
         padding: 50px;
     }
 
-    img {
-        height: 150px;
-        width: 110px;
-        top: 200px;
-        left: 190px;
-        margin-top: -200px;
-        margin-left: -180px;
-        margin-right: 50px;
-        margin-bottom: 190px;
-        z-index: 6;
-        position: relative;
+    .center-img {
+        width:20%;
+        display:flex;
+        justify-content:center;
+        z-index:5;
+    }
+        
+    .center-img img{
+        height:150px;
+        width:150px;
+        border-radius:40%;
     }
 
-    .middle {
-        margin-top: 110px;
-        margin-left: -760px;
+    /* About-page*/
+
+    #about-text {
+        text-align: center;
+        font-size: 15px;
+        padding: 6px;
     }
 
-    #top {
-        margin-top: 200px;
-        margin-right: 470px;
+    #page-links {
+        display:flex;
     }
 
-    #bottom {
-        margin-top: 200px;
-        margin-left: -150px;
-   
-}
-
-#page-links {
-    display:flex;
-    justify-content: space-around;
-}
-
-footer {
-    font-size: 10px;
-}
+    footer {
+        font-size: 10px;
+    }
 
 }    
 
@@ -248,3 +322,4 @@ footer {
         justify-content: space-around;
         align-items: flex-end;
     }
+}

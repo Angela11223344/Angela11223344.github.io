@@ -1,0 +1,43 @@
+/* Projects Page Styles CSS*/
+
+.background {
+  background-color: yellow;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+/* circle image hover effect */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  .project-circle {
+    position: relative;
+    text-align: center;
+  }
+  
+  .project-circle:hover img {
+    filter: saturate(5px);
+    transform: rotate(360deg);
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .project-circle img {
+    transition: all .2s ease-in-out;
+    max-width: 100vmin;
+    max-height: 70vmin;
+    border: 10px solid white;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+  }

@@ -44,6 +44,12 @@ nav a {
     width: 0;
     animation: typing 2.5s steps(30, end) forwards, blinking 1s infinite;
 }
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
     
 @keyframes typing {
     from { width: 0 }
@@ -315,3 +321,43 @@ footer {
         align-items: flex-end;
     }
 }
+
+/* Projects Page Styles CSS*/
+
+a {
+  align-items: center;
+}
+
+/* circle image hover effect */
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+
+  .project-circle {
+    position: relative;
+    text-align: center;
+  }
+  
+  .project-circle:hover img {
+    filter: saturate(5px);
+    transform: rotate(360deg);
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .project-circle img {
+    transition: all .2s ease-in-out;
+    max-width: 100vmin;
+    max-height: 70vmin;
+    border: 10px solid white;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+  }

@@ -109,8 +109,8 @@ section {
 }
 
 .center-img img{
-    height:350px;
-    width:330px;
+    height:500px;
+    width:490px;
     border-radius:60%;
 }
 
@@ -152,10 +152,12 @@ section {
 }
 
 .fa {
-    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 120px;
     font-size: 30px;
     width: 30px;
-    text-align: center;
+    align-items: center;
     text-decoration: none;
     border-radius: 50%;
 }
